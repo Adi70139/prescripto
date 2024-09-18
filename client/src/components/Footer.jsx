@@ -7,6 +7,11 @@ const Footer = () => {
       e.preventDefault();
       window.location="https://github.com/Adi70139"
   }
+
+  function handleClickP(e){
+    e.preventDefault();
+    window.location="https://portfolio-gyxg.onrender.com"
+}
   return (
     <div className='md:mx-10'>
       <div className='flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10  mt-40 text-sm'>
@@ -32,6 +37,7 @@ const Footer = () => {
             <li>+91 7013973797</li>
             <li>vardhan70139@gmail.com</li>
             <li onClick={handleClick}>Github</li>
+            <li onClick={handleClickP}>Portfolio</li>
           </ul>
         </div>
 

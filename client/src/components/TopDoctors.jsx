@@ -13,7 +13,7 @@ const TopDoctors = () => {
         Simply browse through our extensive list of trusted doctors.
       </p>
       <div className="w-full grid grid-cols-auto gap-4 pt-5 gap-y-6 px-3 sm:px-0">
-        {doctors.slice(0, 10).map((item, index) => (
+        {doctors.slice(0, 12).map((item, index) => (
           <div
             onClick={() => {
               navigate(`/appointment/${item._id}`);
@@ -49,7 +49,7 @@ const TopDoctors = () => {
         }}
         className="bg-[#EAEFFF] text-gray-600 px-12 py-3 rounded-full mt-10"
       >
-        more
+        More
       </button>
     </div>
   );
